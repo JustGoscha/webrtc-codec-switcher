@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple Codec Switch</title>
+  <link rel="stylesheet" media="screen" href="style/style.css">
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+</head>
+<body>
+	<!-- <button id="ws-connect">Connect to WebSocket</button> -->
+	<button id="createOffer">Create Offer</button>
+  <section id="codecform">
+    <form id="codec">
+      Choose audio codec:
+      <input type="radio" name="audio" value="-1" checked>Default<br>
+    </form>
+    <form id="vcodec">
+      Choose video codec:
+      <input type="radio" name="video" value="-1" checked>Default<br>
+    </form>
+    <button id="dc-connect">Choose Codec</button>
+  </section>
+  <section id="sendform" action="">
+    <input type="text" id="message">
+    <button id="send">Send Text over DataChannel</button>
+  </section>
+  <video id="self" src="" autoplay></video>
+  <video id="remote" src="" autoplay></video>
+  
+  <script src="script/codecSwitch.js"></script>
+  <script src="script/app.js"></script>
+
+</body>
+</html>
