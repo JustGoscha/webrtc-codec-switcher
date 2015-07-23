@@ -38,8 +38,9 @@ node server.js
 
 The CodecSwitch library consists of two simple functions.
 
-- CodecSwitch.etractCodecs(sdp): SDP string of offer or answer
-  Returns an object with a list of codec names and an their numbers 
+- `CodecSwitch.etractCodecs(sdp)`: 
+  *inputs*: SDP string of offer or answer
+  *Returns*: an object with a list of codec names and an their numbers 
   ```
   {
     video: {num: [], name: [], lines: []},
@@ -47,9 +48,9 @@ The CodecSwitch library consists of two simple functions.
   }
   ```
 
-- CodecSwitch.preferCodec(numA,numV,sdp):
-  inputs: numA, numV - numbers of Audio & Video Codec
-  returns new SDP string
+- `CodecSwitch.preferCodec(numA,numV,sdp)`:
+  *inputs*: numA, numV - numbers of Audio & Video Codec
+  *returns* new SDP string
 
 
 
